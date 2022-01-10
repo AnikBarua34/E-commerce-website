@@ -1,0 +1,18 @@
+.product-container img{
+    height: 250px;
+    }
+    .card{
+        transition: all 1s;
+    }
+    .card-body:hover .card{
+        
+        transform: scale(1.1);
+    }
+    .card-body:hover .btn{
+        
+        background-color: black;
+        color:white;
+    }
+    .card-body:hover .card{
+        box-shadow: 3px 2px 5px gray;
+    }

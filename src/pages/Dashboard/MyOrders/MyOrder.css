@@ -1,0 +1,10 @@
+.thead{
+    background-color: rgba(255, 255, 255, 0.842);
+    color: black;
+    margin-bottom: 10px;  
+ }
+ .tableData Td{
+     
+     border: 1px solid yellow;
+    margin-bottom: 10px; 
+ }

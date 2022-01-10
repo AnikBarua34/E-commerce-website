@@ -1,0 +1,57 @@
+h3 {
+	color: rgb(255, 121, 59);
+	font-weight: 900;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contactText {
+	margin-left: 60px;
+	margin-top: 140px;
+}
+.contact {
+	margin-left: 60px;
+
+	height: 400px;
+	margin-bottom: 150px;
+}
+.image-icon {
+	height: 80px;
+	width: 80px;
+}
+.col-md-3 {
+	background: rgb(250, 209, 191);
+	padding: 4%;
+	border-top-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+}
+.contact-info {
+	margin-top: 5%;
+	background-color: rgb(250, 209, 191);
+}
+.contact-info img {
+	margin-bottom: 15%;
+}
+.contact-info h2 {
+	margin-bottom: 3%;
+}
+.col-md-9 {
+	background: #fff;
+	padding: 3%;
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+}
+.contact-form label {
+	font-weight: 600;
+}
+.contact-form button {
+	background: rgb(255, 163, 121);
+	color: #fff;
+	font-weight: 600;
+	width: 25%;
+}
+.contact-form button:focus {
+	box-shadow: none;
+}
+.contact-form{
+	margin-left: 30px;
+}
+

@@ -1,0 +1,40 @@
+
+.brand{
+    transition: all 1s;
+    
+    font-size: 30px;
+}
+.navbar:hover .brand{
+    color:chocolate;
+    
+    transform: scale(1.3);
+    }
+    .navbar{
+      background-color: rgb(255, 230, 218);
+    }
+
+.link {
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        
+      }  
+
+.link:hover{
+        color: black;
+        border-color:rgb(98, 98, 126); 
+        
+}
+
+.link:visited {
+    color: green;
+  }
+.link:active {
+    color: yellow;
+  }
+  .brand-name{
+    color: #ff8944;
+  }
+
+  
+  

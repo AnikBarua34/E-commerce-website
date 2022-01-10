@@ -1,0 +1,11 @@
+.footer {
+	background-color: rgb(255, 230, 218);
+	margin-top: 300px;
+}
+
+.list-unstyled a {
+	color: black;
+}
+.footer-heading {
+	text-decoration: none;
+}
