@@ -21,6 +21,7 @@ import AddProduct from './pages/Dashboard/AddProduct/AddProduct';
 import Blogs from './pages/Blogs/Blogs';
 import ContactUs from './pages/ContactUs/ContactUs';
 import AboutUs from './pages/AboutUs/AboutUs';
+import EditItem from './pages/Dashboard/EditItem/EditItem';
 
 
 
@@ -90,6 +91,9 @@ function App() {
         </AdminRoute>
         <AdminRoute path="/manageProducts">
    <ManageProducts></ManageProducts>
+        </AdminRoute>
+        <AdminRoute path="/editItems/:id">
+   <EditItem></EditItem>
         </AdminRoute>
         <Route path="*">
         <NotFound></NotFound>

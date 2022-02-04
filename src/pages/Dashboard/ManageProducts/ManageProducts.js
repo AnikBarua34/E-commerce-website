@@ -4,9 +4,13 @@ import { Button, Spinner } from 'react-bootstrap';
 import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table';
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
 import { RiDeleteBin5Fill} from 'react-icons/ri';
+import { TiEdit} from 'react-icons/ti';
 import Swal from 'sweetalert2';
+import { Link, useRouteMatch } from 'react-router-dom';
+
 
 const ManageProducts = () => {
+  let{url} = useRouteMatch();
     const [allproducts,setAllProducts] =useState([]);
     useEffect(()=>{
         fetch('https://daily-need.herokuapp.com/getAddNewProduct')
@@ -65,6 +69,7 @@ const ManageProducts = () => {
                       <Th>Price</Th>
                       <Th>Product ID</Th>
                       <Th>Product Picture</Th>
+                      <Th>Edit Item</Th>
                       <Th>Delete Item</Th>
                       
                     </Tr>
@@ -79,10 +84,15 @@ const ManageProducts = () => {
                 <Td>{price}</Td>
                 <Td>{_id}</Td>
                 <Td><img style={{width:'100px',height:'100px'}} src={img} alt="" /> </Td>
+                <Td> <Link to={`/editItems/${_id}`}> <button className="btn btn-light"><TiEdit/>
+
+                </button></Link></Td>
                 
                 <Td><button className="btn btn-danger" onClick={()=>handleDelete(_id)}><RiDeleteBin5Fill/>
 
                 </button></Td>
+                
+
                 </Tr>
                 ))}              
 
